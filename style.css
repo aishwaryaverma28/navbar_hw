@@ -16,7 +16,7 @@
 body{
     margin: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     background: var(--dark);
     color: var(--pure);
@@ -116,4 +116,6 @@ color: var(--primary);
 }
 .mobile .hamburger span{
     transform-origin: left;
+
 }
+
