@@ -14,6 +14,7 @@
     --dark-gray: #999;
 }
 body{
+    margin: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -22,6 +23,7 @@ body{
 }
  .container{
     width: 100vw;
+    /* margin: 1rem 2rem; */
     max-width: 100%;
     max-width: 0 auto;
  }
@@ -32,6 +34,8 @@ body{
     /* border: 2px solid black; */
 }
 .brand{
+    padding: 0.5rem;
+    gap: 0.5rem;
     display: flex;
     align-items: center;
 }
@@ -89,4 +93,27 @@ color: var(--primary);
     width: 25px;
     height: 3px;
     margin-bottom: 8px;
+}
+.mobile ul.nav-list{
+    background: -webkit-linear-gradient(45deg, #ffa6c1, #000000);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    opacity: 0;
+    pointer-events: none;
+}
+.hamburger, .brand{
+    z-index: 9990;
+}
+.mobile ul.nav-list.open{
+    opacity: 1;
+    pointer-events: auto;
+}
+.mobile .hamburger span{
+    transform-origin: left;
 }
